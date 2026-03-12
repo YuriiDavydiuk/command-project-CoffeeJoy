@@ -1,0 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.5;
+    color: #0b0803;
+    background-color:#e0cbb4;
+}
