@@ -1,13 +1,906 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-template/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vanilla-template/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CoffeeJoy</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"/>
+
     <script type="module" crossorigin src="/vanilla-template/index.js"></script>
     <link rel="stylesheet" crossorigin href="/vanilla-template/assets/index-CFMFFkDP.css">
   </head>
   <body>
+    <header class="page-header">
+  <div class="container header-container">
+    <nav class="header-nav">
+      <a class="header-logo" href="./index.html"
+        ><img
+          src="/img/company-logo.svg"
+          alt="Coffee Joy Logo"
+          width="84"
+          height="36"
+      /></a>
+      <ul class="header-list">
+        <li class="header-item">
+          <a class="header-link" href="#hero">About us</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#testimonials">Testimonial</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#location">Location</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="burger-btn js-open-menu"
+      aria-expanded="false"
+      type="button"
+      aria-label="Open menu button"
+      data-mobile-open
+    >
+      <svg class="burger-icon" width="24" height="24">
+        <use href="/img/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+    <main>
+      <section class="hero-section" id="hero">
+  <div class="container hero-container">
+    <h1 class="hero-title">Savor the Essence of Specialty Coffee</h1>
+    <p class="hero-text">
+      At CoffeeJoy, we believe every cup tells a story. Join us in exploring the
+      rich flavors and aromas of our carefully curated coffee selections.
+    </p>
+    <a class="hero-link hero-btn" href="#quality">Learn More</a>
+  </div>
+</section>
+      <section class="section" id="benefits">
+  <div class="container welcome-wrapper">
+    <div class="welcome-tablet">
+  <div class="welcome-container">
+    <p class="welcome-first-text">Welcome</p>
+    <h2 class="welcome-title">Our Journey: Passion for Quality Coffee</h2>
+  </div>
+  <div class="welcome-inside">
+    <p class="welcome-text">
+      At CoffeeJoy, we believe that every cup tells a story. Our mission is to
+      bring you the finest coffee experiences, crafted with care and dedication.
+      We are committed to sourcing high-quality beans and roasting them to
+      perfection, ensuring each sip is a delight.
+    </p>
+    <a class="welcome-location" href="#location">
+      Find location
+      <svg class="welcome-location-icon" width="24" height="24">
+        <use href="/img/icons.svg#icon-map-pin"></use>
+      </svg>
+    </a>
+  </div>
+  </div>
+  <img
+    class="welcome-photo"
+    srcset="/img/welcome.jpg 1x, /img/welcome@2x.jpg 2x"
+    src="/img/welcome.jpg"
+    alt="Barista prepares coffe"
+    loading="lazy"
+    width="1312" height="738"
+  />
+  </div>
+</section>
+      <section class="section" id="quality">
+  <div class="container" >
+    <div class="quality">
+      <div class="quality-header">
+        <p class="quality-subtitle">Quality</p>
+        <h2 class="quality-title">Why CoffeeJoy Stands Out from the Rest</h2>
+        <p class="quality-text">
+          At CoffeeJoy, we pride ourselves on delivering the freshest roasted
+          coffee, crafted with care by our skilled baristas. Our flexible
+          subscription plans ensure that your coffee experience is tailored to
+          your needs.
+        </p>
+      </div>
+
+      <ul class="quality-list">
+        <li class="quality-item">
+          <img
+            srcset="/img/quality01.jpg 1x, /img/quality01@2x.jpg 2x"
+            src="/img/quality01.jpg"
+            alt="coffee cup"
+            class="quality-img"
+            width="288"
+            height="164"
+            loading="lazy"
+          />
+
+          <h3 class="quality-item-title">
+            Fresh-Roasted Coffee for Every Taste
+          </h3>
+          <p class="quality-item-text">
+            Savor the rich flavors of our expertly sourced beans.
+          </p>
+        </li>
+
+        <li class="quality-item">
+          <img
+            srcset="/img/quality02.jpg 1x, /img/quality02@2x.jpg 2x"
+            src="/img/quality02.jpg"
+            alt="barista"
+            class="quality-img"
+            width="288"
+            height="164"
+            loading="lazy"
+          />
+
+          <h3 class="quality-item-title">
+            Expert Baristas Crafting Your Perfect Brew
+          </h3>
+          <p class="quality-item-text">
+            Our baristas are passionate about coffee and skilled in their craft.
+          </p>
+        </li>
+
+        <li class="quality-item quality-item-wide">
+          <img
+            srcset="/img/quality03.jpg 1x, /img/quality03@2x.jpg 2x"
+            src="/img/quality03.jpg"
+            alt="coffee-shop"
+            class="quality-img"
+            width="288"
+            height="164"
+            loading="lazy"
+          />
+
+          <h3 class="quality-item-title quality-item-title-wide">
+            Cozy Atmosphere
+          </h3>
+          <p class="quality-item-text quality-item-text-wide">
+            We don't just serve coffee — we create a warm and welcoming space
+            where every cup feels like home.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+      <section class="section experience" id="gallery">
+  <div class="container">
+    <div class="experience-wrapper">
+      <h2 class="experience-title">Coffee Moments</h2>
+      <p class="experience-text">
+        Experience the warmth and community of CoffeeJoy.
+      </p>
+    </div>
+    <ul class="experience-list">
+      <!-- 1 img -->
+      <li class="experience-item">
+        <img
+          class="experience-img"
+          srcset="/img/cart1.jpg 1x, /img/cart1@2x.jpg 2x"
+          src="/img/cart1.jpg"
+          alt="Cup of cappuccino"
+          width="288"
+          height="288"
+          loading="lazy"
+        />
+      </li>
+      <!-- 2 img -->
+      <li class="experience-item">
+        <img
+          class="experience-img"
+          srcset="/img/cart2.jpg 1x, /img/cart2@2x.jpg 2x"
+          src="/img/cart2.jpg"
+          alt="Coffee and croissant"
+          width="288"
+          height="288"
+          loading="lazy"
+        />
+      </li>
+      <!-- 3 img -->
+      <li class="experience-item">
+        <img
+          class="experience-img"
+          srcset="/img/cart3.jpg 1x, /img/cart3@2x.jpg 2x"
+          src="/img/cart3.jpg"
+          alt="Coffee and book"
+          width="288"
+          height="162"
+          loading="lazy"
+        />
+      </li>
+      <!-- 4 img -->
+      <li class="experience-item">
+        <img
+          class="experience-img"
+          srcset="/img/cart4.jpg 1x, /img/cart4@2x.jpg 2x"
+          src="/img/cart4.jpg"
+          alt="Coffee in hands"
+          width="288"
+          height="162"
+          loading="lazy"
+        />
+      </li>
+      <!-- 5 img -->
+      <li class="experience-item">
+        <img
+          class="experience-img"
+          srcset="/img/cart5.jpg 1x, /img/cart5@2x.jpg 2x"
+          src="/img/cart5.jpg"
+          alt="Coffee shop"
+          width="288"
+          height="288"
+          loading="lazy"
+        />
+      </li>
+      <!-- 6 img -->
+      <li class="experience-item">
+        <img
+          class="experience-img"
+          srcset="/img/cart6.jpg 1x, /img/cart6@2x.jpg 2x"
+          src="/img/cart6.jpg"
+          alt="Coffee on the table"
+          width="288"
+          height="288"
+          loading="lazy"
+        />
+      </li>
+      <!-- 7 img -->
+      <li class="experience-item experience-item-huge">
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="/img/cart7.jpg 1x, /img/cart7@2x.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/img/cart7-tablet.jpg 1x, /img/cart7@2x-tablet.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/img/cart7.jpg 1x, /img/cart7@2x.jpg 2x"
+          />
+          <img
+            class="experience-img super"
+            srcset="/img/cart7.jpg 1x, /img/cart7@2x.jpg 2x"
+            src="/img/cart7.jpg"
+            alt="Coffee in a park"
+            width="288"
+            height="391"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="section subscribe">
+    <div class="container subscribe-flex">
+        <div class="collums collums-text">
+        <h2 class="subscribe-h2">Join Our Coffee Community</h2>
+        <p class="subscribe-afterh2">Experience the joy of coffee delivered right to your door. Sign up today!</p>
+        
+       <form class="subscribe-form" id="formEmail">
+        
+        <label for="userEmail"></label>
+        <div class="subscribe-wriper">
+        <input type="email" name="user-email" id="userEmail" placeholder="Your Email Here" class="subscribe-input" required 
+        pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+        <span class="subscribe-text-eror" id="erorEmail">Use correct e-mail</span>
+        </div>
+        <button type="submit" class="subscribe-btn">Subscribe <svg class="subscribe-icon" width="24" height="24">
+        <use href="/img/icons.svg#icon-chevrons-right"></use>
+        </svg></button>
+        </form>
+        <p class="subscribe-afterbtn">By clicking Get Started, you agree to our Terms and Conditions.</p>
+        </div>
+        <div class="collums">
+  <picture>
+  <source 
+    srcset="/img/subsribe.jpg 1x, /img/subsribe@2x.jpg 2x" 
+    media="(min-width: 1440px)">
+  <source 
+    srcset="/img/subsribe.jpg 1x, /img/subsribe@2x.jpg 2x" 
+    media="(min-width: 768px)">
+  <img
+    class="subscribe-img"
+    src="/img/subscribe-mobile.jpg"
+    srcset="/img/subscribe-mobile.jpg 1x, /img/subscribe-mobile@2x.jpg 2x"
+    alt="subscribe-photo"
+    loading="lazy" 
+  >
+        </picture>
+        </div>
+    </div>
+
+</section>
+      <section class="section" id="testimonials">
+  <div class="container container-testimonials">
+    <!-- Section title -->
+    <div class="testimonials-title-wrap">
+      <h2 class="testimonials-title">What our visitors say</h2>
+    </div>
+
+    <!-- Testimonials list -->
+    <div class="testimonials-card-wrap">
+      <ul class="testimonials-list">
+        <!-- Card 1 -->
+        <li class="testimonials-card">
+          <!-- Stars list -->
+          <ul class="testimonials-card-stars">
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg
+                class="star-outline"
+                width="20"
+                height="19"
+                aria-label="outlined star"
+              >
+                <use href="/img/icons.svg#icon-star-outline"></use>
+              </svg>
+            </li>
+          </ul>
+
+          <!-- Review text -->
+          <p class="testimonials-card-text">
+            “Every cup feels like a warm hug! I’m addicted to their seasonal
+            flavors!”
+          </p>
+
+          <!-- Author -->
+          <p class="testimonials-card-author">Name Surname</p>
+        </li>
+
+        <!-- Card 2 -->
+        <li class="testimonials-card">
+          <!-- Stars list -->
+          <ul class="testimonials-card-stars">
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg
+                class="star-outline"
+                width="20"
+                height="19"
+                aria-label="outlined star"
+              >
+                <use href="/img/icons.svg#icon-star-outline"></use>
+              </svg>
+            </li>
+          </ul>
+
+          <!-- Review text -->
+          <p class="testimonials-card-text">
+            "CoffeeJoy is my go-to place for a perfect cup of coffee! The
+            ambiance is so inviting, and the baristas are always friendly."
+          </p>
+
+          <!-- Author -->
+          <p class="testimonials-card-author">Alice Johnson</p>
+        </li>
+
+        <!-- Card 3 -->
+        <li class="testimonials-card">
+          <!-- Stars list -->
+          <ul class="testimonials-card-stars">
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+          </ul>
+
+          <!-- Review text -->
+          <p class="testimonials-card-text">
+            "I love the variety of blends offered at CoffeeJoy. Every visit
+            feels like a new experience!"
+          </p>
+
+          <!-- Author -->
+          <p class="testimonials-card-author">Michael Smith</p>
+        </li>
+
+        <!-- Card 4 -->
+        <li class="testimonials-card">
+          <!-- Stars list -->
+          <ul class="testimonials-card-stars">
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg
+                class="star-outline"
+                width="20"
+                height="19"
+                aria-label="outlined star"
+              >
+                <use href="/img/icons.svg#icon-star-outline"></use>
+              </svg>
+            </li>
+            <li>
+              <svg
+                class="star-outline"
+                width="20"
+                height="19"
+                aria-label="outlined star"
+              >
+                <use href="/img/icons.svg#icon-star-outline"></use>
+              </svg>
+            </li>
+          </ul>
+
+          <!-- Review text -->
+          <p class="testimonials-card-text">
+            "The pastries are to die for! I can’t resist pairing them with my
+            favorite latte. Highly recommend this spot!"
+          </p>
+
+          <!-- Author -->
+          <p class="testimonials-card-author">Emily Davis</p>
+        </li>
+
+        <!-- Card 5 -->
+        <li class="testimonials-card">
+          <!-- Stars list -->
+          <ul class="testimonials-card-stars">
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg
+                class="star"
+                width="20"
+                height="19"
+                aria-label="outlined star"
+              >
+                <use href="/img/icons.svg#icon-star-outline"></use>
+              </svg>
+            </li>
+          </ul>
+
+          <!-- Review text -->
+          <p class="testimonials-card-text">
+            "A cozy little gem! CoffeeJoy has the best cold brew in town. I come
+            here every weekend!"
+          </p>
+
+          <!-- Author -->
+          <p class="testimonials-card-author">James Brown</p>
+        </li>
+
+        <!-- Card 6 -->
+        <li class="testimonials-card">
+          <!-- Stars list -->
+          <ul class="testimonials-card-stars">
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg
+                class="star-outline"
+                width="20"
+                height="19"
+                aria-label="outlined star"
+              >
+                <use href="/img/icons.svg#icon-star-outline"></use>
+              </svg>
+            </li>
+            <li>
+              <svg
+                class="star-outline"
+                width="20"
+                height="19"
+                aria-label="outlined star"
+              >
+                <use href="/img/icons.svg#icon-star-outline"></use>
+              </svg>
+            </li>
+          </ul>
+
+          <!-- Review text -->
+          <p class="testimonials-card-text">
+            "The atmosphere is perfect for working or relaxing with friends.
+            Their Wi-Fi is fast too!"
+          </p>
+
+          <!-- Author -->
+          <p class="testimonials-card-author">Sarah Wilson</p>
+        </li>
+
+        <!-- Card 7 -->
+        <li class="testimonials-card">
+          <!-- Stars list -->
+          <ul class="testimonials-card-stars">
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg
+                class="star-outline"
+                width="20"
+                height="19"
+                aria-label="outlined star"
+              >
+                <use href="/img/icons.svg#icon-star-outline"></use>
+              </svg>
+            </li>
+          </ul>
+
+          <!-- Review text -->
+          <p class="testimonials-card-text">
+            "I’m addicted to their seasonal flavors! Each one is crafted with
+            such care and creativity."
+          </p>
+
+          <!-- Author -->
+          <p class="testimonials-card-author">Chris Lee</p>
+        </li>
+
+        <!-- Card 8 -->
+        <li class="testimonials-card">
+          <!-- Stars list -->
+          <ul class="testimonials-card-stars">
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="star" width="20" height="19" aria-label="filled star">
+                <use href="/img/icons.svg#icon-star-filled"></use>
+              </svg>
+            </li>
+            <li>
+              <svg
+                class="star-outline"
+                width="20"
+                height="19"
+                aria-label="outlined star"
+              >
+                <use href="/img/icons.svg#icon-star-outline"></use>
+              </svg>
+            </li>
+          </ul>
+
+          <!-- Review text -->
+          <p class="testimonials-card-text">
+            "I appreciate how they source their coffee beans sustainably. It's
+            great to support such an ethical business!"
+          </p>
+
+          <!-- Author -->
+          <p class="testimonials-card-author">Patricia Taylor</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+      <section class="section" id="location">
+  <div class="container location-container">
+    <div class="">
+      <div class="location-section">
+        <p class="location-section-text">Find</p>
+        <h2 class="location-section-title">Location</h2>
+        <p class="location-section-subtitle">
+          Visit us at our cozy coffee shop!
+        </p>
+      </div>
+      <address class="location-address">
+        <ul class="location-wraper">
+          <li class="location-item">
+            <svg class="location-item-icon" width="32" height="32">
+              <use href="/img/icons.svg#icon-envelope"></use>
+            </svg>
+            <p class="location-item-text">Email</p>
+            <a class="location-item-link" href="mailto:hello@coffeejoy.com"
+              >hello@coffeejoy.com</a
+            >
+          </li>
+          <li class="location-item">
+            <svg class="location-item-icon" width="32" height="32">
+              <use href="/img/icons.svg#icon-phone"></use>
+            </svg>
+            <p class="location-item-text">Phone</p>
+            <a class="location-item-link" href="tel:+15551235321"
+              >+1 (555) 123-5321</a
+            >
+          </li>
+          <li class="location-item">
+            <svg class="location-item-icon" width="32" height="32">
+              <use href="/img/icons.svg#icon-map"></use>
+            </svg>
+            <p class="location-item-text">Office</p>
+            <p class="location-item-text-address">
+              263 Newbury St, Boston, MA 02116, USA
+            </p>
+            <a
+              class="location-link-address"
+              href="https://maps.app.goo.gl/quGxNWZQLA355CeL8"
+              target="_blank"
+              >Get Directions
+              <svg class="location-link-address-icon" width="8" height="12">
+                <use href="/img/icons.svg#icon-one"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </address>
+    </div>
+    <div class="location-wrapper-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.66892764083!2d-71.08594152441441!3d42.34958143576431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a0f084cda31%3A0x2c61033530218739!2zMjYzIE5ld2J1cnkgU3QsIEJvc3RvbiwgTUEgMDIxMTYsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2spl!4v1762286465391!5m2!1suk!2spl"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+  <div class="footer-container">
+    <div class="footer-branding">
+      <a href="./index.html" class="footer-logo-link">
+        <img src="/img/company-logo.svg" alt="логотип" class="footer-logo" />
+      </a>
+      <div class="social-media">
+        <ul class="social-media-list">
+          <li class="icon-footer">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              title="Facebook"
+            >
+              <svg width="24" height="24" class="icon-footer">
+                <use href="/img/icons.svg#icon-Facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-footer">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              title="Instagram"
+            >
+              <svg width="24" height="24" class="icon-footer">
+                <use href="/img/icons.svg#icon-Instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-footer">
+            <a href="https://x.com/" target="_blank" title="X">
+              <svg width="24" height="24" class="icon-footer">
+                <use href="/img/icons.svg#icon-X"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="footer-links">
+      <ul class="footer-links-list">
+        <li class="footer-item">
+          <a class="footer-link" href="#hero">About us</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="#testimonials">Testimonial</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="#location">Location</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <p class="footer-rights">© 2025 CoffeeJoy. All rights reserved.</p>
+  </div>
+</footer>
+    <div class="navbar" data-mobile>
+  <div class="container navbar-container">
+    <div class="navbar-wrapper">
+      <a href="./index.html"
+        ><img
+          class="navbar-logo"
+          src="/img/company-logo.svg"
+          alt="Coffee Joy Logo"
+      /></a>
+
+      <button class="navbar-btn" type="button" data-mobile-close>
+        <svg class="navbar-btn-icon" width="24" height="24">
+          <use href="/img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav">
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a class="navbar-item-link" href="#hero">About us</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-item-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-item-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-item-link" href="#testimonials">Testimonial</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-item-link" href="#location">Location</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+    <div class="modal">
+    <div class="overlay">
+        <button class="modal-close-btn"><svg class="modal-icon" width="32" height="32">
+        <use href="/img/icons.svg#icon-close"></use>
+        </svg>
+        </button>
+        <h2>Welcome to the world of CoffeeJoy!</h2>
+        <p>Fresh brews, special offers, and cozy updates are coming your way.</p>
+        <img src="/img/success.jpg" srcset="/img/success.jpg 1x, /img/success@2x.jpg 2x" alt="Coffe and lists" width="644" height="374" loading="lazy" >
+        <button class="success-btn-close">Close</button>
+    </div>
+</div>
+
   </body>
 </html>
